@@ -3,44 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mijn NS</title>
-    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 verhalen - Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-<body>
 
+<body>
     <header>
-        <h1>Welkom bij uw NS-account</h1>
-        <h2>Inloggen</h2>
+        <a name="top"></a>
+        <a href="index.html"> <img src="images/Nederlandse-spoorwegen-NS-logo.png" alt="logo"></a>
     </header>
     <main>
-        <form action="index.html">
-            <fieldset>
-                <legend>Inloggen</legend>
-                <label for="email">E-mailadres</label><input id="email" required>
-                <label for="password">Wachtwoord</label><input id="password" required>
-            </fieldset>
-             <a href="url">Wachtwoord vergeten</a>
-        <button name="inloggen" type="submit">Inloggen</button>
-        </form>
-
-        <section>
-        <h2>NS-account aanmaken</h2>
-
-        <p>Verhalen geschikt voor elk device naar keuze</p>
-        <p>Ruime keuze uit verschillende soorten verhalen</p>
-        <p>Uw persoonlijke account beheren</p>
-
-        <a href="aanmelden.html">Account aanmaken</a>
-        </section>
-
+        <article>
+            <h1>Welkom bij uw NS- account</h1>
+            <form action="index.html">
+                <fieldset>
+                    <legend>Inloggen</legend>
+                    <div class="label-group">
+                        <label for="email">E-mailadres</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="label-group">
+                        <label for="password">Wachtwoord</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <label>
+                <input id="inloggen" type="submit" value="Inloggen">
+            </label>
+                    <button id="wachtwoordVergeten">Wachtwoord vergeten?</button>
+                </fieldset>
+            </form>
+            <div class="aanmaken">
+                <section>
+                    <h2>NS-account aanvragen</h2>
+                </section>
+                <ul>
+                    <li>
+                        <span>Lees uw favoriete verhalenbundels</span>
+                    </li>
+                    <li>
+                        <span>Verhalen geschikt voor elk device</span>
+                    </li>
+                    <li>
+                        <span>Ongestoord genieten van uw reis</span>
+                    </li>
+                    <li>
+                        <span>Uw persoonlijke account beheren</span>
+                    </li>
+                </ul>
+                <button>Account aanvragen</button>
+            </div>
+        </article>
     </main>
 
-    <footer>
-        <a href="/naarboven/">Terug naar boven</a> |
-        <a href="/disclaimer/">Disclaimer</a> |
-        <a href="/privacy/">Privacy</a> |
-        <a href="/bedrijfsinformatie/">Bedrijfsinformatie</a>
-    </footer>
-
 </body>
+
 </html>
