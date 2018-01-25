@@ -1,0 +1,13 @@
+body>header>a>img {
+    width: 3.5em;
+    height: 3.5em;
+    margin-left: 1em;
+}
+
+h1 {
+  font-size: 1em;
+  font-family: NS Sans;
+  color: #003082;
+  font-weight: normal;
+  margin-left: 2em;
+}

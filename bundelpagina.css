@@ -1,0 +1,293 @@
+body>header>img {
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+body>header {
+    background-color: white;
+    margin-top: -1.063em;
+    margin-bottom: -20em;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+}
+
+body>header>a>img{
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 1em;
+    margin-left: 2em;
+
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: flex-end;
+margin-top: -3.2em;
+margin-bottom: 2.500em;
+margin-left: 1em;
+}
+
+nav ul li {
+margin-right: 1em;
+}
+
+body {
+    background-color: #E7E6E8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: NSsans;
+    color: #003082;
+    font-weight: normal;
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.allBundles {
+    font-family: NS Sans;
+    color: #003082;
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #2078BE;
+    margin-left: 1em;
+}
+
+.verhaal1 {
+    background-image: url(../images/gefrustreerd.jpg);
+    background-size: cover;
+    border: none;
+    height: 15em;
+    width: 100%;
+    color: #fff;
+    font-family: NS Sans;
+    font-size: 1.5em;
+    text-decoration:none;
+    margin-bottom: -3em;
+    margin-top: -2em;
+}
+
+.verhaal2 {
+    background-image: url(../images/futloos.jpg);
+    background-size: cover;
+    border: none;
+    height: 15em;
+    width: 100%;
+    color: #fff;
+    font-family: NS Sans;
+    font-size: 1.5em;
+    text-decoration:none;
+    margin-bottom: -3em;
+}
+
+.verhaal3 {
+    background-image: url(../images/optimistisch.jpg);
+    background-size: cover;
+    border: none;
+    height: 15em;
+    width: 100%;
+    color: #fff;
+    font-family: NS Sans;
+    font-size: 1.5em;
+    text-decoration:none;
+    margin-bottom: -3em;
+}
+
+article>button {
+    width: 15em;
+    height: 4em;
+    background-color: #2078BE;
+    border: none;
+    box-shadow: 0 0 0.125em rgba(0, 0, 0, .25);
+    margin-left: 4.3em;
+    margin-top: 15em;
+    transition: background-color 0.15s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 -0.125em 0 #005CA0 inset;
+}
+
+article>button:hover {
+background-color: #005CA0;
+box-shadow: 0 -0.125em 0 #005CA0 inset;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+article>button>a {
+    color: #fff;
+    text-decoration: none;
+    font-family: NS Sans;
+    font-size: 1.4em;
+}
+
+article>h3 {
+    font-family: NS Sans;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+main>footer>a {
+    color: #003082;
+    font-family: NS Sans;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 0.625em;
+    background-color: #FAC637;
+    margin-top: 0.625em;
+    background-color: black;
+    color: #fff;
+    padding: 0 0.7em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+footer>button {
+    width: 25em;
+    height: 4em;
+    background-color: #2078BE;
+    border: none;
+    box-shadow: 0 0 0.125em rgba(0, 0, 0, .25);
+    margin-left: 6em;
+    margin-bottom: 2em;
+}
+
+footer>button>a {
+    color: #fff;
+    font-family: NS Sans;
+    font-size: 1.5em;
+    margin-top: 0.6em;
+    text-decoration: none;
+}
+
+/* Breakpoint #1 - tablet*/
+
+@media (min-width:40em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+
+
+    .verhaal1 {
+        background-image: url(../images/gefrustreerd.jpg);
+        background-size: cover;
+        border: none;
+        height: 14em;
+        width: 100%;
+        color: #fff;
+        font-family: NS Sans;
+        font-size: 1.5em;
+        text-decoration:none;
+        margin-bottom: -3em;
+        margin-top: -1em;
+    }
+
+    .verhaal2 {
+        background-image: url(../images/futloos.jpg);
+        background-size: cover;
+        border: none;
+        height: 14em;
+        width: 100%;
+        color: #fff;
+        font-family: NS Sans;
+        font-size: 1.5em;
+        text-decoration:none;
+        margin-bottom: -3em;
+        margin-top: -1em;
+    }
+
+    .verhaal3 {
+        background-image: url(../images/optimistisch.jpg);
+        background-size: cover;
+        border: none;
+        height: 14em;
+        width: 100%;
+        color: #fff;
+        font-family: NS Sans;
+        font-size: 1.5em;
+        text-decoration:none;
+        margin-bottom: -3em;
+        margin-top: 3em;
+    }
+
+    article>button {
+        width: 15em;
+        height: 4em;
+        background-color: #2078BE;
+        border: none;
+        box-shadow: 0 0 0.125em rgba(0, 0, 0, .25);
+        margin-left: 4.3em;
+        margin-top: 5em;
+        transition: background-color 0.15s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0 -0.125em 0 #005CA0 inset;
+    }
+
+    /*Breakpoint #2 - desktop*/
+
+    @media (min-width:60em) {
+        main {
+            display: grid;
+            grid-gap: -4em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .verhaal1 {
+            background-image: url(../images/gefrustreerd.jpg);
+            background-size: cover;
+            border: none;
+            height: 14em;
+            width: 13em;
+
+            color: #fff;
+            font-family: NS Sans;
+            font-size: 1.5em;
+            text-decoration:none;
+            margin-bottom: -3em;
+            margin-top: 6em;
+            margin-left: -42.8em;
+        }
+
+        .verhaal2 {
+            background-image: url(../images/futloos.jpg);
+            background-size: cover;
+            border: none;
+            height: 14em;
+            width: 13em;
+            color: #fff;
+            font-family: NS Sans;
+            font-size: 1.5em;
+            text-decoration:none;
+            margin-bottom: -3em;
+            margin-top: -12.2em;
+            margin-left: 15em;
+        }
+
+        .verhaal3 {
+            background-image: url(../images/optimistisch.jpg);
+            background-size: cover;
+            border: none;
+            height: 14em;
+            width: 13em;
+            color: #fff;
+            font-family: NS Sans;
+            font-size: 1.5em;
+            text-decoration:none;
+            margin-bottom: -3em;
+            margin-top: -12.2em;
+        }
