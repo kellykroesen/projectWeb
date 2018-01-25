@@ -1,88 +1,227 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <title>NS 99 verhalen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 
 <body>
     <header>
         <a name="top"></a>
-        <img src="images/Nederlandse-spoorwegen-NS-logo.png">
+        <img src="images/Nederlandse-spoorwegen-NS-logo.png" alt="logo-Nederlandse-spoorwegen">
         <nav>
             <ul>
-                <li><a href="zoeken"><img alt="zoeken" src="images/search.svg" width="40" height="40"></a></li>
-                <li><a href="lijstje.html"><img alt="lijstje" src="images/list.svg" width="30" height="30"></a></li>
-                <li><a href="inloggen.html"><img alt="inloggen" src="images/mijnns.svg" width="40" height="40"></a></li>
+              <li><a href="zoeken"><img alt="zoeken" src="images/search.svg" width="40" height="40"></a></li>
+              <li class="list"><a href="mijnbundels.html"><img alt="lijstje" src="images/list.svg" width="30" height="30"></a></li>
+              <li><a href="inloggen.html"><img alt="inloggen" src="images/mijnns.svg" width="40" height="40"></a></li>
             </ul>
         </nav>
-
     </header>
 
     <section>
-        <h1>Verhalenbundels voor onderweg </h1>
-        <a>Stel je eigen verhalenbundel samen</a>
+        <h1>Verhalenbundels voor onderweg</h1>
+        <p>Stel zelf een verhalenbundel samen die past bij jouw reis</p>
     </section>
 
+    <div class="geel-vlak">
+      <h2>Stel uw verhalenbundel samen</h2>
+      <p>Waar gaat u naartoe?</p>
+      <form>
+        <fieldset>
+          <div>
+          <label class="from" for="address">Van</label>
+          <input type="text" id="address" name="address">
+          </div>
+          <div>
+            <label class="to" for="address">Naar</label>
+            <input type="text" id="address" name="address">
+          </div>
+        <label>
+            <input id="login" type="submit" value="Samenstellen">
+        </label>
+            </fieldset>
+        </form>
+      </div>
     <main>
-        <h2>Populaire bundels</h2>
+        <h2 class="popular">Populaire bundels</h2>
+        <a class="allBundles">>Alle bundels</a>
 
-        <article>
+        <article class="square1">
             <header>
-                <h3>Intercity Amsterdam CS </h3><div><img src="images/klok.svg" alt="klok"><p>20min.</p></div>
+                <h3><a href="bundelpagina.html">Intercity Nijmegen</a></h3>
+                <div class="time"><img src="images/klok.svg" alt="klok"><p>20min.</p></div>
             </header>
-            <a href="letterlijk.html"><img alt="next" src="images/next.svg">Letterlijk</a>
-            <a href="moe.html"><img alt="next" src="images/next.svg">Moe</a>
-            <a href="verhalend.html"><img alt="next" src="images/next.svg">Verhalend</a>
-            <a href="notitie.html"><img alt="next" src="images/next.svg">Notitie</a>
-            <a href="essentie.html"><img alt="next" src="images/next.svg">Essentie</a>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a href="#" class="add"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
         </article>
 
-        <article>
-            <header>
-                <h3>Intercity Dordrecht</h3>
-                <img src="images/klok.svg" alt="klok">40min.
-            </header>
-            <a href="letterlijk.html"><img alt="next" src="images/next.svg">Letterlijk</a>
-            <a href="moe.html"><img alt="next" src="images/next.svg">Moe</a>
-            <a href="verhalend.html"><img alt="next" src="images/next.svg">Verhalend</a>
-            <a href="notitie.html"><img alt="next" src="images/next.svg">Notitie</a>
-            <a href="essentie.html"><img alt="next" src="images/next.svg">Essentie</a>
+        <article class="verhaal1">
+            <h5>Verhaal <span>Letterlijk</span> uit verhalenbundel intercity Nijmegen</h5>
+            <button><a href="letterlijk.html">Lees het verhaal</a></button>
         </article>
 
-        <article>
+        <article class="square2">
             <header>
                 <h3>Sprinter Utrecht Centraal</h3>
-                <img src="images/klok.svg" alt="klok">35min.
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>35min.</p>
+                </div>
             </header>
-            <a href="letterlijk.html"><img alt="next" src="images/next.svg">Letterlijk</a>
-            <a href="moe.html"><img alt="next" src="images/next.svg">Moe</a>
-            <a href="verhalend.html"><img alt="next" src="images/next.svg">Verhalend</a>
-            <a href="notitie.html"><img alt="next" src="images/next.svg">Notitie</a>
-            <a href="essentie.html"><img alt="next" src="images/next.svg">Essentie</a>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
         </article>
 
-        <article>
+        <article class="square3">
             <header>
                 <h3>Sprinter Hoofddorp</h3>
-                <img src="images/klok.svg" alt="klok"><p>45min.</p>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>45min.</p>
+                </div>
             </header>
-            <a href="letterlijk.html"><img alt="next" src="images/next.svg">Letterlijk</a>
-            <a href="moe.html"><img alt="next" src="images/next.svg">Moe</a>
-            <a href="verhalend.html"><img alt="next" src="images/next.svg">Verhalend</a>
-            <a href="notitie.html"><img alt="next" src="images/next.svg">Notitie</a>
-            <a href="essentie.html"><img alt="next" src="images/next.svg">Essentie</a>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
         </article>
 
-<!--        <section><a href="meerverhalen.html">Meer verhalen</a></section>-->
+        <article class="square4">
+            <header>
+                <h3>Intercity Dordrecht</h3>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>40min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+
+        <article class="verhaal2">
+            <h5>Verhaal <span>Moe</span> uit verhalenbundel intercity Dordrecht</h5>
+            <button><a href="moe.html">Lees het verhaal ></a></button>
+        </article>
 
 
-       <footer>
-        <a href="#top">^</a>
-       </footer>
+        <article class="square5">
+            <header>
+                <h3>Sprinter Amsterdam Centraal</h3>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>35min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+
+        <article class="verhaal3">
+            <h5>Verhaal <span>Verhalend</span> uit verhalenbundel Sprinter Tiel</h5>
+            <button><a href="verhalend.html">Lees het verhaal ></a></button>
+        </article>
+
+        <article class="square6">
+            <header>
+                <h3>Sprinter Rotterdam</h3>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>45min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+
+
+        <article class="square7">
+            <header>
+                <h3>Sprinter Tiel</h3>
+                <div class="time2"><img src="images/klok.svg" alt="klok">
+                    <p>35min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+
+        <article class="square8">
+            <header>
+                <h3>Sprinter Woerden</h3>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>45min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+
+        <article class="square9">
+            <header>
+                <h3>Intercity Den Haag Centraal</h3>
+                <div class="time"><img src="images/klok.svg" alt="klok">
+                    <p>45min.</p>
+                </div>
+            </header>
+            <ul>
+              <li>Letterlijk</li>
+              <li>Moe</li>
+              <li>Verhalend</li>
+              <li>Notitie</li>
+              <li>Essentie</li>
+            </ul>
+            <a href="#" class="add" href="toevoegen"><img alt="next" src="images/next.svg">Voeg toe aan mijn bundels</a>
+        </article>
+        <footer>
+            <a href="#top">^</a>
+        </footer>
     </main>
-
+<script src="js/microinteracties2.js"></script>
 </body>
+
 </html>
